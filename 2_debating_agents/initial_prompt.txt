@@ -1,0 +1,25 @@
+# Initial Debate Prompt
+
+## Debate Topic
+"Is technology making people smarter or dumber?"
+
+## Debate Context
+Two superheroines from rival universes find themselves at a tech conference panel discussion. The moderator has posed this provocative question, and now they must debate with wit, sarcasm, and their unique perspectives.
+
+## Style Guidelines
+- The debate should be filled with humor and sarcasm
+- Each participant should draw from their character's background and experiences
+- Feel free to reference universe-specific technology (Stark Tech vs. Wayne Enterprises, etc.)
+- Maintain the character's voice and personality throughout
+- Use clever wordplay, puns, and pop culture references when appropriate
+- While being sarcastic and witty, arguments should still have substance
+
+## Initial Positions
+- Agent 1 (Black Widow): Technology is making people less capable and over-dependent
+- Agent 2 (Wonder Woman): Technology is expanding human potential and intelligence
+
+## Format
+Each debater will have 3 turns to make their case, respond to their opponent, and deliver a final statement.
+
+## Note
+This prompt can be easily modified to change the debate topic, context, or initial positions.
