@@ -144,7 +144,7 @@ def create_agent_config(agent_data: Dict[str, Any], prompt_data: Dict[str, Any],
     """Create the configuration for an AutoGen agent."""
     # Determine which position to use
     position = prompt_data['agent1_position'] if is_agent1 else prompt_data['agent2_position']
-    opponent = "Wonder Woman" if is_agent1 else "Black Widow"
+    opponent = "WonderWoman" if is_agent1 else "BlackWidow"
     
     # Create system message
     system_message = f"""
@@ -267,8 +267,8 @@ def main():
     # Create a group chat with a custom termination function
     def is_termination_msg(message):
         """Check if we've reached the maximum number of rounds."""
-        # Count the number of non-system messages
-        message_count = sum(1 for msg in message["content"] if msg.get("role") != "system")
+        # Count total messages exchanged (excluding system messages)
+        message_count = len([msg for msg in groupchat.messages if msg.get("role") != "system"])
         # Each round consists of 2 messages (one from each agent)
         return message_count >= DEBATE_ROUNDS * 2
     

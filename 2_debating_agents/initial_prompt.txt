@@ -15,8 +15,8 @@ Two superheroines from rival universes find themselves at a tech conference pane
 - While being sarcastic and witty, arguments should still have substance
 
 ## Initial Positions
-- Agent 1 (Black Widow): Technology is making people less capable and over-dependent
-- Agent 2 (Wonder Woman): Technology is expanding human potential and intelligence
+- Agent 1 (BlackWidow): Technology is making people less capable and over-dependent
+- Agent 2 (WonderWoman): Technology is expanding human potential and intelligence
 
 ## Format
 Each debater will have 3 turns to make their case, respond to their opponent, and deliver a final statement.

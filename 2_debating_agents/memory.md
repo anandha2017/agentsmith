@@ -29,12 +29,12 @@ This document summarizes the requirements for the Two-Agent Debate System projec
 
 ## Additional Details
 
-- **Agent 1 (Black Widow)**
+- **Agent 1 (BlackWidow)**
   - Marvel Universe character
   - Uses OpenAI's gpt-4-mini model
   - Personality traits include dry wit, intelligence, and pragmatism
 
-- **Agent 2 (Wonder Woman)**
+- **Agent 2 (WonderWoman)**
   - DC Universe character
   - Uses Anthropic's Claude haiku model
   - Personality traits include nobility, wisdom, and diplomatic skills

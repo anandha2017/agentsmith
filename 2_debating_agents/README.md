@@ -4,7 +4,7 @@ This project implements a debate system between two AI agents with distinct pers
 
 ## Features
 
-- Two AI agents with distinct personalities (Black Widow from Marvel and Wonder Woman from DC)
+- Two AI agents with distinct personalities (BlackWidow from Marvel and WonderWoman from DC)
 - Configurable debate topics and number of rounds
 - Humor and sarcasm-infused debates
 - Easily modifiable agent personalities and LLM configurations
