@@ -170,3 +170,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# 3_copy_agents specific ignores
+3_copy_agents/node_modules/
+3_copy_agents/package-lock.json
+3_copy_agents/.env*

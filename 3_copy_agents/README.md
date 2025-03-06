@@ -36,9 +36,9 @@ A browser-based application for managing content creation and reviews for UK reg
    ```
 3. Create a `.env.local` file based on the `env.environment` template:
    ```bash
-   cp env.environment .env.local
+   cp env.environment env.local
    ```
-4. Edit `.env.local` and add your API keys
+4. Edit `env.local` and add your API keys
 
 ## Running the Application
 
