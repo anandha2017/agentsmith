@@ -4,8 +4,8 @@ This project creates a simulated debate between two historical scientists - Niko
 
 ## Features
 
-- Tesla is powered by OpenAI's API (GPT-4)
-- Lamarr is powered by Anthropic's Claude API
+- Tesla is powered by OpenAI's API (GPT-4o-mini)
+- Lamarr is powered by Anthropic's Claude API (Claude-3-haiku)
 - The debate runs for exactly 4 rounds to keep costs in check
 - The conversation is saved to a timestamped text file
 - Both scientists maintain humorous, sarcastic personas throughout the debate
@@ -26,7 +26,12 @@ This project creates a simulated debate between two historical scientists - Niko
 
 2. Install the required dependencies:
    ```
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
+   ```
+   
+   Or install dependencies directly:
+   ```
+   pip3 install python-dotenv openai anthropic
    ```
 
 3. Set up your API keys:
@@ -42,7 +47,7 @@ This project creates a simulated debate between two historical scientists - Niko
 Run the debate bot:
 
 ```
-python debate_bot.py
+python3 debate_bot.py
 ```
 
 The script will:
@@ -65,6 +70,21 @@ You can modify the following aspects of the debate:
 - The debate is limited to 4 rounds to keep API costs reasonable
 - Error handling is included to gracefully handle API failures
 - The conversation is formatted for easy reading in the saved file
+
+## Troubleshooting
+
+If you encounter errors when running the script, try the following:
+
+- **ModuleNotFoundError: No module named 'dotenv'**: Make sure you've installed the python-dotenv package with `pip3 install python-dotenv`
+- **ModuleNotFoundError: No module named 'openai'**: Install the OpenAI package with `pip3 install openai`
+- **ModuleNotFoundError: No module named 'anthropic'**: Install the Anthropic package with `pip3 install anthropic`
+- **API key errors**: Ensure your API keys in env.local are valid and correctly formatted
+
+If you're using a system with multiple Python installations, make sure to use the correct Python command (`python3` instead of `python`) and the corresponding pip command (`pip3` instead of `pip`).
+
+## Example Output
+
+The debate generates a humorous and sarcastic conversation between Tesla and Lamarr, with each character maintaining their unique personality while discussing modern software development concepts. The output is saved to a timestamped file (e.g., `debate_20250306_152426.txt`) and also printed to the console in real-time.
 
 ## License
 

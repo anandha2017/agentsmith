@@ -86,7 +86,7 @@ def get_tesla_response(conversation_history):
     """Get a response from the Tesla agent using OpenAI API."""
     try:
         response = openai_client.chat.completions.create(
-            model="gpt-4",  # Or another suitable model
+            model="gpt-4o-mini",  # Or another suitable model
             messages=[
                 {"role": "system", "content": TESLA_SYSTEM_PROMPT},
                 {"role": "user", "content": INITIAL_PROMPT}
@@ -111,7 +111,7 @@ def get_lamarr_response(conversation_history):
                 formatted_history += "Lamarr: " + msg["content"] + "\n\n"
         
         response = claude_client.messages.create(
-            model="claude-3-opus-20240229",  # Or another suitable Claude model
+            model="claude-3-haiku-20240307",  # Or another suitable Claude model
             system=LAMARR_SYSTEM_PROMPT,
             max_tokens=1000,
             temperature=0.8,
