@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Content Review System</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="/app.js"></script>
+</head>
+<body x-data="app()" x-init="init()">
+    <header>
+        <h1>Bank Content Authoring Suite</h1>
+        <div class="provider-toggle">
+            <label>LLM Provider:</label>
+            <select x-model="llmProvider" @change="updateProvider">
+                <option value="claude">Claude (Haiku)</option>
+                <option value="openai">OpenAI (GPT-4o)</option>
+                <option value="deepseek">DeepSeek (R1)</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bank Selection -->
+        <section class="card">
+            <h2>1. Select Bank</h2>
+            <template x-for="bank in banks" :key="bank.id">
+                <label class="bank-option">
+                    <input type="radio" name="bank" :value="bank.id" x-model="selectedBank">
+                    <div class="bank-card">
+                        <h3 x-text="bank.name"></h3>
+                        <p x-text="bank.description"></p>
+                    </div>
+                </label>
+            </template>
+        </section>
+
+        <!-- Content Creation -->
+        <section class="card">
+            <h2>2. Create Content</h2>
+            <div class="form-group">
+                <label>Content Description:</label>
+                <textarea x-model="contentDescription" placeholder="Describe the content you need..."></textarea>
+            </div>
+            <div class="form-group">
+                <label>Word Count:</label>
+                <input type="number" x-model.number="wordCount" min="50" max="2000" value="300">
+            </div>
+            <button @click="generateContent" :disabled="!canGenerate">
+                <span x-text="generating ? 'Generating...' : 'Generate Content'"></span>
+            </button>
+        </section>
+
+        <!-- Generated Content Editor -->
+        <section class="card" x-show="generatedContent">
+            <h2>3. Review & Edit Content</h2>
+            <textarea class="content-editor" x-model="generatedContent"></textarea>
+            
+            <div class="reviewer-selection">
+                <h3>Select Reviewers:</h3>
+                <template x-for="agent in availableAgents" :key="agent">
+                    <label class="reviewer-option">
+                        <input type="checkbox" :value="agent" x-model="selectedReviewers">
+                        <span x-text="agent.replace(/_/g, ' ')"></span>
+                    </label>
+                </template>
+                <button @click="getFeedback" :disabled="!canGetFeedback">
+                    <span x-text="reviewing ? 'Requesting Feedback...' : 'Get Feedback'"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Feedback Display -->
+        <section class="card" x-show="reviews.length > 0">
+            <h2>4. Reviewer Feedback</h2>
+            <div class="feedback-container">
+                <template x-for="(review, index) in reviews" :key="index">
+                    <div class="feedback-card" :class="review.agent">
+                        <h3 x-text="review.agent.replace(/_/g, ' ')"></h3>
+                        <div class="feedback-content" x-html="formatFeedback(review.feedback)"></div>
+                        <label class="include-feedback">
+                            <input type="checkbox" :checked="selectedFeedback.includes(index)"
+                                   @change="toggleFeedback(index)">
+                            Include this feedback
+                        </label>
+                    </div>
+                </template>
+            </div>
+            <button @click="regenerateContent" :disabled="!canRegenerate">
+                <span x-text="regenerating ? 'Regenerating...' : 'Apply Selected Feedback'"></span>
+            </button>
+        </section>
+    </main>
+
+    <div class="loading-overlay" x-show="loading">
+        <div class="loader"></div>
+    </div>
+</body>
+</html>

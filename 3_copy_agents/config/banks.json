@@ -1,0 +1,212 @@
+[
+    {
+      "id": "shawbrook",
+      "name": "Shawbrook Group plc",
+      "description": "A specialist UK lending and savings bank",
+      "regulatory_info": {
+        "fca_reference": "FRN: 204574",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["MCOB", "CONC", "BCOBS"]
+      },
+      "brand_guidelines": {
+        "tone": "Expert, Transparent, Customer-focused",
+        "key_messaging": "Specialist lending solutions with a personal approach",
+        "target_audience": ["Property developers", "Professional landlords", "SMEs", "Consumers"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    },
+    {
+      "id": "aldermore",
+      "name": "Aldermore Bank PLC",
+      "description": "A specialist bank offering straightforward products to UK customers",
+      "regulatory_info": {
+        "fca_reference": "FRN: 204503",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["MCOB", "CONC", "BCOBS"]
+      },
+      "brand_guidelines": {
+        "tone": "Straightforward, Reliable, Dynamic",
+        "key_messaging": "Banking that backs people for who they are",
+        "target_audience": ["SMEs", "Homeowners", "Property investors", "Savers"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    },
+    {
+      "id": "metro",
+      "name": "Metro Bank Holdings PLC",
+      "description": "A retail and commercial bank operating in the UK",
+      "regulatory_info": {
+        "fca_reference": "FRN: 753045",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["BCOBS", "CONC", "MCOB"]
+      },
+      "brand_guidelines": {
+        "tone": "Friendly, Accessible, Customer-first",
+        "key_messaging": "Banking that revolves around you",
+        "target_audience": ["Retail customers", "Small businesses", "Commercial enterprises"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    },
+    {
+      "id": "securetrust",
+      "name": "Secure Trust Bank Plc",
+      "description": "A UK retail bank providing savings accounts and lending products",
+      "regulatory_info": {
+        "fca_reference": "FRN: 204550",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["CONC", "BCOBS"]
+      },
+      "brand_guidelines": {
+        "tone": "Secure, Trustworthy, Straightforward",
+        "key_messaging": "Banking you can believe in",
+        "target_audience": ["Retail savers", "Consumers", "Businesses"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    },
+    {
+      "id": "virginmoney",
+      "name": "Virgin Money UK PLC",
+      "description": "A UK-based banking and financial services company",
+      "regulatory_info": {
+        "fca_reference": "FRN: 183332",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["BCOBS", "MCOB", "CONC"]
+      },
+      "brand_guidelines": {
+        "tone": "Bold, Straightforward, Heartfelt",
+        "key_messaging": "Making you happier about money",
+        "target_audience": ["Retail customers", "Small businesses", "Homeowners"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    },
+    {
+      "id": "closebrothers",
+      "name": "Close Brothers Group PLC",
+      "description": "A merchant banking group providing lending, deposit taking, and securities trading",
+      "regulatory_info": {
+        "fca_reference": "FRN: 124750",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["COBS", "MCOB", "BCOBS"]
+      },
+      "brand_guidelines": {
+        "tone": "Expert, Personable, Trusted",
+        "key_messaging": "Modern merchant banking",
+        "target_audience": ["SMEs", "Professionals", "High net worth individuals"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    },
+    {
+      "id": "paragon",
+      "name": "Paragon Banking Group PLC",
+      "description": "A specialist finance provider focused on mortgage and commercial lending",
+      "regulatory_info": {
+        "fca_reference": "FRN: 204293",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["MCOB", "CONC", "BCOBS"]
+      },
+      "brand_guidelines": {
+        "tone": "Professional, Specialist, Reliable",
+        "key_messaging": "Specialist lending and savings expertise",
+        "target_audience": ["Property investors", "Landlords", "SMEs", "Savers"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    },
+    {
+      "id": "investec",
+      "name": "Investec Bank PLC",
+      "description": "A distinctive specialist bank and wealth manager",
+      "regulatory_info": {
+        "fca_reference": "FRN: 489604",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["COBS", "BCOBS", "MCOB"]
+      },
+      "brand_guidelines": {
+        "tone": "Distinctive, Entrepreneurial, Client-focused",
+        "key_messaging": "Out of the ordinary",
+        "target_audience": ["High net worth individuals", "Professionals", "Entrepreneurs"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    },
+    {
+      "id": "cooperative",
+      "name": "Co-operative Bank PLC",
+      "description": "A retail and commercial bank with a strong ethical policy",
+      "regulatory_info": {
+        "fca_reference": "FRN: 121885",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["BCOBS", "MCOB", "CONC"]
+      },
+      "brand_guidelines": {
+        "tone": "Ethical, Cooperative, Customer-led",
+        "key_messaging": "It's good to be different",
+        "target_audience": ["Ethically-minded consumers", "Community organizations", "Charities"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    },
+    {
+      "id": "starling",
+      "name": "Starling Bank Limited",
+      "description": "A digital, mobile-only challenger bank based in the UK",
+      "regulatory_info": {
+        "fca_reference": "FRN: 730166",
+        "pra_regulated": true,
+        "fscs_protected": true,
+        "key_regulations": ["BCOBS", "CONC"]
+      },
+      "brand_guidelines": {
+        "tone": "Straightforward, Innovative, Human",
+        "key_messaging": "Banking that works for you",
+        "target_audience": ["Tech-savvy consumers", "Small businesses", "Freelancers"]
+      },
+      "content_requirements": {
+        "risk_warnings": true,
+        "regulatory_disclaimers": true,
+        "accessibility_standards": "WCAG 2.1 AA"
+      }
+    }
+  ]
